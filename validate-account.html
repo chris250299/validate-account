@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Validate account</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    function isValidateAccount(str) {
+        var accountRegexp = /^\w{6,}$/;
+        if (accountRegexp.test(str)) {
+            alert("Tài khoản đúng");
+        } else {
+            alert("Tài khoản của bạn không hợp lệ");
+        }
+    }
+    var myAccount = prompt("Nhập tài khoản của bạn");
+    isValidateAccount(myAccount);
+
+</script>
+</body>
+</html>
